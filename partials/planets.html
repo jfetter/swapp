@@ -1,0 +1,15 @@
+	
+<!-- loading message -->
+<div ng-hide="populousPlanets"> Loading planet list...</div>
+<div ng-show="error"></div>
+	<div ng-repeat="planet in populousPlanets">
+	<div>
+		<a ng-click="showResidents">{{planet.name}} --pop:{{planet.population}}</a>
+			<swapi-planet id="1">
+		    <swapi-resident id="1"></swapi-resident>
+			</swapi-planet>
+	</div>
+	<div>
+		<a class="btn" ng-repeat="char in planets[planetName].planet" >{{char}}/</a>
+	</div>
+</div>
